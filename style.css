@@ -1,0 +1,25 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("./fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: OpenSans;
+    font-weight: 400;
+}
