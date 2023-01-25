@@ -22,4 +22,120 @@ body {
     font-size: 16px;
     font-family: OpenSans;
     font-weight: 400;
+    background: var(--Violet);
+    color: white;
+}
+
+main.container {
+    background: url("./images/bg-desktop.svg") repeat-y;
+    min-height: 100vh;
+    padding: 1em;
+}
+
+.container { 
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    flex-basis: 50%;
+    flex: 1;
+
+}
+
+svg{
+    margin-bottom: 2em;
+    width: 30%;
+    
+}
+
+img {
+    width: 100%;
+}
+
+
+div.container {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    gap: 1em;
+    position: relative;
+}
+
+.heading {
+    font-family: Poppins;
+    font-size: 3em;
+}
+
+.info {
+    font-size: 1.2em;
+}
+
+button[type=button] {
+    align-self: flex-start;
+    padding: 1.2em 3em;
+    border-radius: 50px;
+    border: none;
+    width: 30%;
+    color:hsl(257, 40%, 49%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.363);
+}
+
+button[type=button]:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: white;
+}
+
+.svgmoment {
+    margin-top: 10em;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    gap: 1em;
+
+}
+
+.svg {
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .5em .55em;
+}
+
+ .svg svg {
+    width: 40px;
+    height: 40px;
+}
+
+.svg:hover {
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.svg:hover svg{
+    stroke: hsl(300, 69%, 71%);
+    fill: hsl(300, 69%, 71%);
+}
+
+
+@media screen and (max-width: 600px) {
+    main.container {
+        flex-direction: column;
+    }
+
+    div.container {
+        align-items: center;
+        text-align: center;
+    }
+
+    button[type=button] {
+        align-self: center;
+        width: 60%;
+    }
+
+    .svgmoment {
+        align-self: center;
+    }
 }
